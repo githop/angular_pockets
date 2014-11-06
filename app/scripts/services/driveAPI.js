@@ -10,7 +10,7 @@
 angular.module('ngFdnApp')
   .factory('driveAPI', ['$http', function($http) {
 
-    var APIKey = 'AIzaSyB_Gu6uDOCsvVNawWd7WT05F7pqMAnE2O4'; 
+    var APIKey = ''; 
     var baseUrl = 'https://www.googleapis.com/drive/v2/files/';
     var driveFactory = {};
 
