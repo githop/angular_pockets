@@ -1,0 +1,46 @@
+<div class="col-background">
+	<div class="row">
+		<form ng-submit="searchResults(pol)">
+			<div class="large-6 columns">
+				<label>Search Politicians
+					<input type="text" ng-model="pol" typeahead="pol for pol in typeahead($viewValue)" 
+					placeholder="Enter name..." typeahead-loading="loadingLocations" typeahead-on-select="searchResults(pol)"/>
+				</label>
+			</div>
+		</form>
+		<div class="small-3 columns">
+			<label>Pick a State
+				<select ng-model="selected" ng-change="selectState(selected)" ng-options="state.name for state in states">
+					<option value="">State</option>
+				</select>
+			</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 columns" id="main-strip">
+		<div ng-show="banner.show">
+				<h5>Welcome to Padded Pockets</h5>
+				<img ng-src="{{banner.img}}">
+			</div>
+			<div ng-repeat="politician in politicians" class="repeater">
+				<div class="small-4 columns card">
+					<section class="inner	">
+						<img ng-src="{{politician.img}}" class="thumb" ng-click="open(politician)">
+
+						<div class="{{politician.party.toLowerCase()}}">
+							<strong>{{politician.title.titleize()}}</strong>
+							{{politician.name}}
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div class="small-3 columns">
+			<div class="panel mny-grn">
+				<h4>About Padded Pockets</h4>
+				<p>There's much to be ashamed about in today's politics</p>
+			</div>
+		</div>
+	</div>
+</div>

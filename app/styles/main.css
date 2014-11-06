@@ -1,0 +1,76 @@
+/*politician card */
+.card {
+  height: 240px;
+  width: 160px;
+  margin: 0 5px;
+}
+
+.thumb {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.inner {
+  width:130px;
+  height: 220px;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+/*large-9 column content*/
+#main-strip {
+ 
+}
+/*ng-repeat section*/
+.repeater { 
+}
+/*colors */
+
+.slogan a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #F1F3F2;
+}
+
+.red {
+  background-color: #A40000;
+}
+
+.blue {
+  background-color: #1573AA;
+}
+
+.mny-grn {
+  background-color: #fff200;
+}
+
+/*color strips for party*/
+.republican {
+  border-top: 13px solid #A40000;
+}
+.democrat {
+  border-top:13px solid #1573AA;
+}
+.independent {
+  border-top: 13px solid #A9B0B3;
+}
+
+ /*right side panel */
+.panel {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/*politician modal*/
+.reveal-modal {
+  width: 800px;
+  height: 535px;
+  top: 20px;
+}

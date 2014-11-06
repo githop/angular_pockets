@@ -1,0 +1,17 @@
+ <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+<h4>{{politician.name}} <small>Total Contributions: {{politician.total | currency}}</small></h4>
+<span>{{politician.state}}</span>
+<table>
+  <thead>
+    <tr>
+      <th>Org Name</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="contrib in politician.contributions">
+      <td>{{contrib.org_name}}</td>
+      <td>{{contrib.total | currency}}</td>
+    </tr>
+  </tbody>
+</table>
