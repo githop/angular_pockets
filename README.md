@@ -1,7 +1,8 @@
 angular_pockets
 ===============
 
-Angular thick front end client for padded pockets 2.0. Consumes JSON from rails API. 
+Angular thick front end client for padded pockets 2.0. Consumes JSON from rails API.
+see it live at (see it live)(http://pocketspadded.herokuapp.com, "Padded Pockets")
 
 ###Padded Pockets
 This is the angular half of my rails/angular hybrid app.
